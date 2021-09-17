@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_order_taking"
+    android:layout_width="match_parent"
+    android:background="@drawable/frontbluescreen3"
+    android:layout_height="match_parent"
+    tools:context="consultant.eyecon.activities.OrderTaking">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:visibility="visible">
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appBarLayout"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/textviewone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="190dp"
+            android:gravity="center"
+            android:text="MANAGEMENT DASHBOARD"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/globalname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="@color/colorBlackWithOpacity"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="0.5"
+                app:cardCornerRadius="10dp">
+
+                <TextView
+                    android:id="@+id/sales_summary"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/round_corner_remarks"
+                    android:drawableTop="@drawable/saleandsummery"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:text="Sale Details"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="0.5"
+                app:cardCornerRadius="10dp">
+
+                <TextView
+                    android:id="@+id/profitandloss"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/round_corner_remarks"
+                    android:drawableTop="@drawable/profitandloss"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:text="Profit and Loss"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="0.5"
+                app:cardCornerRadius="10dp">
+
+                <TextView
+                    android:id="@+id/current_stock"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/round_corner_remarks"
+                    android:drawableTop="@drawable/currentstock"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:text="Current Stock"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="0.5"
+                app:cardCornerRadius="10dp">
+
+                <TextView
+                    android:id="@+id/party_ledger"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/round_corner_remarks"
+                    android:drawableTop="@drawable/criticleproduct"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:text="Party Ledger"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="4dp"
+    android:paddingRight="4dp"
+    android:paddingTop="4dp"
+    android:weightSum="4.3">
+
+    <TextView
+        android:id="@+id/sn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:paddingLeft="2dp"
+        android:text="1."
+        android:textColor="@color/colorPrimary"
+        android:textSize="8sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/first"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ellipsize="marquee"
+        android:gravity="left"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:scrollHorizontally="true"
+        android:singleLine="false"
+        android:text="Location"
+        android:textAlignment="gravity"
+        android:textColor="@color/colorBlackWithOpacity"
+        android:textSize="10sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/second"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:scrollHorizontally="true"
+        android:singleLine="false"
+        android:text="Category"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlackWithOpacity"
+        android:textSize="10sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/third"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:scrollHorizontally="true"
+        android:singleLine="false"
+        android:text="Sales_Date"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlackWithOpacity"
+        android:textSize="10sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/fourth"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ellipsize="marquee"
+        android:gravity="right"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:scrollHorizontally="true"
+        android:singleLine="false"
+        android:text="Item_Name"
+        android:textAlignment="gravity"
+        android:textColor="@color/colorBlackWithOpacity"
+        android:textSize="10sp"
+        android:textStyle="normal" />
+
+</LinearLayout>

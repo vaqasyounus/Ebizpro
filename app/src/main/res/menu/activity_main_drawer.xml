@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Order">
+        <menu>
+            <item
+                android:id="@+id/nav_order_booking"
+                android:icon="@drawable/ic_order_booking"
+                android:title="Order Booking" />
+            <item
+                android:id="@+id/nav_order_taking"
+                android:icon="@drawable/ic_order_taking"
+                android:title="Order Taking" />
+
+        </menu>
+    </item>
+    <item
+        android:id="@+id/nav_product"
+        android:icon="@drawable/ic_product"
+        android:title="Product" />
+    <item
+        android:id="@+id/nav_report"
+        android:icon="@drawable/ic_report"
+        android:title="Report" />
+    <item android:title="Connection Setting">
+        <menu>
+            <item
+                android:id="@+id/nav_setting"
+                android:icon="@drawable/ic_settings"
+                android:title="Setting" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_logout"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+
+</menu>

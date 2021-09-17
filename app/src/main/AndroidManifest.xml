@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="consultant.eyecon">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <compatible-screens>
+        <!--no small size screens -->
+        <screen
+            android:screenDensity="ldpi"
+            android:screenSize="small" /> <!-- approximately 120 dpi -->
+        <screen
+            android:screenDensity="mdpi"
+            android:screenSize="small" /> <!-- approximately 160 dpi -->
+        <screen
+            android:screenDensity="hdpi"
+            android:screenSize="small" /> <!-- approximately 240 dpi -->
+        <screen
+            android:screenDensity="280"
+            android:screenSize="small" /> <!-- Workaround -->
+        <screen
+            android:screenDensity="xhdpi"
+            android:screenSize="small" /> <!-- approximately 320 dpi -->
+        <screen
+            android:screenDensity="360"
+            android:screenSize="small" /> <!-- Workaround -->
+        <screen
+            android:screenDensity="420"
+            android:screenSize="small" /> <!-- Workaround -->
+        <screen
+            android:screenDensity="480"
+            android:screenSize="small" /> <!-- Workaround -->
+        <screen
+            android:screenDensity="560"
+            android:screenSize="small" /> <!-- Workaround -->
+        <screen
+            android:screenDensity="640"
+            android:screenSize="small" /> <!-- Workaround -->
+
+
+        <!--all normal size screens -->
+        <screen
+            android:screenDensity="ldpi"
+            android:screenSize="normal" /> <!-- approximately 120 dpi -->
+        <screen
+            android:screenDensity="mdpi"
+            android:screenSize="normal" /> <!-- approximately 160 dpi -->
+        <screen
+            android:screenDensity="hdpi"
+            android:screenSize="normal" /> <!-- approximately 240 dpi -->
+        <screen
+            android:screenDensity="280"
+            android:screenSize="normal" /> <!-- Workaround -->
+        <screen
+            android:screenDensity="xhdpi"
+            android:screenSize="normal" /> <!-- approximately 320 dpi -->
+        <screen
+            android:screenDensity="360"
+            android:screenSize="normal" /> <!-- Workaround -->
+        <screen
+            android:screenDensity="420"
+            android:screenSize="normal" /> <!-- Workaround -->
+        <screen
+            android:screenDensity="480"
+            android:screenSize="normal" /> <!-- Workaround -->
+        <screen
+            android:screenDensity="560"
+            android:screenSize="normal" /> <!-- Workaround -->
+        <screen
+            android:screenDensity="640"
+            android:screenSize="normal" /> <!-- Workaround -->
+
+
+        <!-- all large size screens -->
+        <screen
+            android:screenDensity="ldpi"
+            android:screenSize="large" />
+        <screen
+            android:screenDensity="mdpi"
+            android:screenSize="large" />
+        <screen
+            android:screenDensity="hdpi"
+            android:screenSize="large" />
+        <screen
+            android:screenDensity="xhdpi"
+            android:screenSize="large" />
+
+        <!-- all xlarge size screens -->
+        <screen
+            android:screenDensity="ldpi"
+            android:screenSize="xlarge" />
+        <screen
+            android:screenDensity="mdpi"
+            android:screenSize="xlarge" />
+        <screen
+            android:screenDensity="hdpi"
+            android:screenSize="xlarge" />
+        <screen
+            android:screenDensity="xhdpi"
+            android:screenSize="xlarge" />
+
+        <!-- Special case for Nexus 7 -->
+        <screen
+            android:screenDensity="213"
+            android:screenSize="large" />
+
+        <!--xxhdpi-->
+
+        <screen
+            android:screenDensity="480"
+            android:screenSize="normal" />
+        <screen
+            android:screenDensity="480"
+            android:screenSize="large" />
+        <screen
+            android:screenDensity="480"
+            android:screenSize="xlarge" />
+
+    </compatible-screens>
+
+    <library tools:node="removeAll" />
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@drawable/oneclickicon"
+        android:label="One Click"
+        android:largeHeap="true"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme"
+        tools:replace="android:supportsRtl,android:label">
+        <activity
+            android:name=".activities.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.LoginActivity"
+            android:label="Credential"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activities.SettingActivity"
+            android:label="Setting"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ReportActivity"
+            android:label="Report"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAecl_BGdFzX1ZBEcVk8fHFmQ49lFYDKpo" />
+
+        <activity
+            android:name=".activities.ReportCurrentStockActivity"
+            android:label="Current Stock"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.ReportActivity" />
+        </activity>
+
+        <activity
+            android:name=".activities.ReportSalesSummeryActivity"
+            android:label="Sale Details"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.ReportActivity" />
+        </activity>
+        <activity
+            android:name=".activities.ReportPartyLedgerActivity"
+            android:label="Party Ledger"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.ReportActivity" />
+        </activity>
+        <activity
+            android:name=".activities.ReportProfitLossActivity"
+            android:label="Profit And Loss"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.ReportActivity" />
+        </activity>
+        <activity
+            android:name=".activities.ProductActivity"
+            android:label="Balance"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+<!--            <meta-data-->
+<!--                android:name="android.support.PARENT_ACTIVITY"-->
+<!--                android:value=".activities.ReportPartyLedgerActivity" />-->
+        </activity>
+        <activity
+            android:name=".activities.IntroActivity"
+            android:label="Intro"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <!--            <meta-data-->
+            <!--                android:name="android.support.PARENT_ACTIVITY"-->
+            <!--                android:value=".activities.ReportPartyLedgerActivity" />-->
+        </activity>
+
+        <activity
+            android:name=".activities.OrderBooking"
+            android:label="Order Booking"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <!--            <meta-data-->
+            <!--                android:name="android.support.PARENT_ACTIVITY"-->
+            <!--                android:value=".activities.ReportPartyLedgerActivity" />-->
+        </activity>
+        <activity
+            android:name=".activities.OrderTaking"
+            android:label="Customer List"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <!--            <meta-data-->
+            <!--                android:name="android.support.PARENT_ACTIVITY"-->
+            <!--                android:value=".activities.ReportPartyLedgerActivity" />-->
+        </activity>
+        <activity
+            android:name=".activities.ConfirmActivity"
+            android:label="Your Cart"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <!--            <meta-data-->
+            <!--                android:name="android.support.PARENT_ACTIVITY"-->
+            <!--                android:value=".activities.ReportPartyLedgerActivity" />-->
+        </activity>
+        <activity
+            android:name=".activities.CashActivity"
+            android:label="Cash"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <!--            <meta-data-->
+            <!--                android:name="android.support.PARENT_ACTIVITY"-->
+            <!--                android:value=".activities.ReportPartyLedgerActivity" />-->
+        </activity>
+    </application>
+
+</manifest>

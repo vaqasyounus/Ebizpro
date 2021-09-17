@@ -1,0 +1,188 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout"
+    android:background="@drawable/frontbluescreen2"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="consultant.eyecon.activities.SettingActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <ScrollView
+            android:id="@+id/login_form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/email_login_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/textviewone"
+                    android:layout_width="match_parent"
+                    android:layout_height="196dp"
+                    android:gravity="center"
+                    android:layout_marginTop="70dp"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+<!--                <ImageView-->
+<!--                    android:id="@+id/image"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:layout_height="164dp"-->
+<!--                    android:src="@drawable/logoeye" />-->
+
+
+                    <EditText
+                        android:id="@+id/ip"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/input"
+                        android:hint="IP ADDRESS"
+
+                        android:drawableStart="@drawable/chat"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorBlack" />
+
+
+
+
+
+                    <EditText
+                        android:id="@+id/database"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="DATABASE NAME"
+
+                        android:textColorHint="@color/colorBlack"
+                        android:textColor="@color/colorBlack"
+                        android:padding="10dp"
+                        android:background="@drawable/input"
+                        android:layout_marginTop="10dp"
+                        android:drawableStart="@drawable/database"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+
+
+
+                    <EditText
+                        android:id="@+id/username"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="DATABASE USERNAME"
+
+                        android:textColorHint="@color/colorBlack"
+                        android:textColor="@color/colorBlack"
+                        android:padding="10dp"
+                        android:background="@drawable/input"
+                        android:layout_marginTop="10dp"
+                    android:drawableStart="@drawable/users"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="DATABSE USER PASSWORD"
+
+                        android:background="@drawable/input"
+                        android:layout_marginTop="10dp"
+                        android:drawableStart="@drawable/pass"
+                        android:imeActionId="@+id/login"
+                        android:textColorHint="@color/colorBlack"
+                        android:textColor="@color/colorBlack"
+                        android:padding="10dp"
+                        android:imeActionLabel="Save"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+
+
+
+                    <EditText
+                        android:id="@+id/buid"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/input"
+                        android:layout_marginTop="10dp"
+                        android:drawableStart="@drawable/add"
+                        android:textColorHint="@color/colorBlack"
+                        android:textColor="@color/colorBlack"
+                        android:padding="10dp"
+                        android:hint="BU ID"
+
+
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+
+
+
+
+                    <EditText
+                        android:id="@+id/terminal_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:drawableStart="@drawable/edit"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/input"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:hint="TERMINAL ID"
+
+                        android:singleLine="true"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorBlack" />
+
+
+                <Button
+                    android:id="@+id/save"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/button"
+                    android:text="Save"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
